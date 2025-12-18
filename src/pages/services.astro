@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    title: 'Pediatric Speech Therapy',
+    description: 'Helping children develop clear speech and effective communication skills through play-based, engaging sessions.',
+  },
+  {
+    title: 'Language Development',
+    description: 'Supporting vocabulary growth, sentence structure, and comprehension for all ages.',
+  },
+  {
+    title: 'Articulation Therapy',
+    description: 'Targeted practice to improve pronunciation and speech clarity.',
+  },
+  {
+    title: 'Adult Speech Services',
+    description: 'Rehabilitation and support for adults with speech and language challenges.',
+  },
+];
+---
+
+<Layout title="Services">
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">Services</h1>
+    <p class="text-xl text-gray-600 mb-12">
+      Comprehensive speech therapy services tailored to your needs.
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      {services.map(service => (
+        <div class="bg-gray-50 rounded-lg p-6">
+          <h2 class="text-xl font-semibold text-teal-600 mb-3">{service.title}</h2>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a 
+        href="/contact" 
+        class="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors"
+      >
+        Schedule a Consultation
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,43 @@
+---
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact', href: '/contact' },
+];
+---
+
+<header class="bg-white border-b border-sage-100">
+  <!-- Top bar with contact info -->
+  <div class="bg-sage-400 text-white text-sm py-2">
+    <div class="max-w-6xl mx-auto px-4 flex justify-end gap-6">
+      <a href="tel:816-729-1513" class="hover:text-sage-100 transition-colors">
+        (816) 729-1513
+      </a>
+      <a href="mailto:kolarikspeechtherapy@gmail.com" class="hover:text-sage-100 transition-colors">
+        kolarikspeechtherapy@gmail.com
+      </a>
+    </div>
+  </div>
+  
+  <!-- Main navigation -->
+  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/" class="text-xl font-semibold text-warmgray-700">
+      Kolarik Speech Therapy
+    </a>
+    <ul class="flex gap-8">
+      {navLinks.map(link => (
+        <li>
+          <a 
+            href={link.href} 
+            class="text-warmgray-500 hover:text-sage-400 transition-colors font-medium"
+          >
+            {link.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
