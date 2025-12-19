@@ -11,17 +11,21 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kolarik Speech Therapy provides in-home pediatric speech therapy services in the Kansas City metro area. Specializing in children ages 2 and up." />
-    <meta name="keywords" content="speech therapy, pediatric speech therapy, Kansas City, speech therapist, home health, child speech development" />
-    <meta name="google-site-verification" content="RfRfz_TQ_4r9pMnPqVCZSUUEzxTE75Xb13xGABhVraY" />
+    <meta name="description" content="Kolarik Speech Therapy - Personalized home health speech therapy services helping children and adults communicate with confidence." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title} | Kolarik Speech Therapy</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TDDYMJY8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1TDDYMJY8J');
+    </script>
   </head>
   <body class="bg-cream text-warmgray-500 font-sans">
     <div class="min-h-screen flex flex-col">
