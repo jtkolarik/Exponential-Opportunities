@@ -21,11 +21,15 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kolarikspeechtherapy.com/blog/encourage-speech-at-home</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kolarikspeechtherapy.com/blog/late-talker-vs-speech-delay</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://kolarikspeechtherapy.com/blog/5-signs-your-toddler-might-benefit-from-speech-therapy</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
-<url>
-  <loc>https://kolarikspeechtherapy.com/blog/late-talker-vs-speech-delay</loc>
-  <priority>0.7</priority>
-</url>
